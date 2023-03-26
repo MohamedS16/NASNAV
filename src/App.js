@@ -19,11 +19,12 @@ function App() {
         <Tnav />
         <Fnav />
       </header>
-    <Item>
-          <Routes>
+<Routes>
+        <Route path='/' element={<Item />}>
+        <Route path='/' element={<Item />}>
           <Route path='cart' element={<Cart />} />
+        </Route>
       </Routes>
-    </Item>
 
       <Similar />
       <Footer />      
