@@ -21,7 +21,6 @@ function App() {
       </header>
 <Routes>
         <Route path='/' element={<Item />}>
-        <Route path='/' element={<Item />}>
           <Route path='cart' element={<Cart />} />
         </Route>
       </Routes>
