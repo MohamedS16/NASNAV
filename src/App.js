@@ -20,7 +20,7 @@ function App() {
         <Fnav />
       </header>
       <Routes>
-        <Route path='/' element={<Item />}>
+        <Route path='/NASNAV' element={<Item />}>
           <Route path='cart' element={<Cart />} />
         </Route>
       </Routes>
