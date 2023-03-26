@@ -5,10 +5,10 @@ import { Tnav } from './pages/Tnav';
 import { Fnav } from './pages/Fnav';
 import Item from './pages/Item';
 import { Footer } from './pages/Footer';
-import { Similar } from './pages/Similar';
 import Cart from './pages/Cart';
 import React from 'react';
 import { Routes,Route } from 'react-router-dom';
+const LazySmimilar = React.lazy(()=>import('./pages/Similar'))
 
 function App() {
   return (
@@ -19,13 +19,17 @@ function App() {
         <Tnav />
         <Fnav />
       </header>
-<Routes>
+      <Routes>
         <Route path='/' element={<Item />}>
           <Route path='cart' element={<Cart />} />
         </Route>
+        <Route path='/NASNAV' element={<Item />}>
+          <Route path='cart' element={<Cart />} />
+        </Route>
       </Routes>
-
-      <Similar />
+      <React.Suspense fallback='Loading..'>
+      <LazySmimilar />
+      </React.Suspense>
       <Footer />      
     </div>
   );
