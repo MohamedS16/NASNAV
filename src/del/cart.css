@@ -1,0 +1,114 @@
+.cart-section{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 7;
+}
+
+.cart-content{
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-content h2{
+    color: blueviolet;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ccard{
+    width: 310px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 10px ;
+}
+
+.ccard img{
+    height: 150px;
+    width: auto;
+    object-fit: cover;
+}
+
+.ccard-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.ccard-text div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.ccard-text>h3,
+.ccard-text p{
+    padding: 5px 0;
+    margin: 0;
+}
+
+.ccard-text>p{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ccard-text div h3{
+    font-weight: 900;
+    color: blueviolet;
+}
+
+.ccard-text div button{
+    border: none;
+    outline: none;
+    width: 80px;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: yellow;
+    font-size: 12px;
+}
+
+.cart-content>a p{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.btns button{
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin: 30px 10px;
+    font-weight: bold;
+}
+
+.btns button:nth-child(1){
+    background-color: blueviolet;
+    color: white;
+}
+
+.btns button:nth-child(2){
+    background-color: yellow;
+    color: black;
+}

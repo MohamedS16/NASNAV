@@ -1,0 +1,115 @@
+$color_1: blueviolet;
+$color_2: white;
+$color_3: black;
+$background-color_1: rgba(0, 0, 0, 0.5);
+$background-color_2: white;
+$background-color_3: yellow;
+$background-color_4: blueviolet;
+
+.cart-section {
+	height: 100%;
+	width: 100%;
+	background-color: $background-color_1;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 7;
+}
+.cart-content {
+	height: 100vh;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 350px;
+	background-color: $background-color_2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		color: $color_1;
+		font-weight: bold;
+		text-align: center;
+	}
+	>a {
+		p {
+			position: absolute;
+			right: 30px;
+			top: 10px;
+			cursor: pointer;
+		}
+	}
+}
+.ccard {
+	width: 310px;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: flex-start;
+	padding: 10px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	margin-top: 10px;
+	img {
+		height: 150px;
+		width: auto;
+		object-fit: cover;
+	}
+}
+.ccard-text {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	div {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		align-items: center;
+		h3 {
+			font-weight: 900;
+			color: $color_1;
+		}
+		button {
+			border: none;
+			outline: none;
+			width: 80px;
+			height: 40px;
+			border-radius: 100px;
+			cursor: pointer;
+			font-weight: bold;
+			background-color: $background-color_3;
+			font-size: 12px;
+		}
+	}
+	>h3 {
+		padding: 5px 0;
+		margin: 0;
+	}
+	p {
+		padding: 5px 0;
+		margin: 0;
+	}
+	>p {
+		font-size: 12px;
+		font-weight: bold;
+	}
+}
+.btns {
+	button {
+		border: none;
+		outline: none;
+		width: 150px;
+		height: 40px;
+		border-radius: 100px;
+		cursor: pointer;
+		margin: 30px 10px;
+		font-weight: bold;
+		&:nth-child(1) {
+			background-color: $background-color_4;
+			color: $color_2;
+		}
+		&:nth-child(2) {
+			background-color: $background-color_3;
+			color: $color_3;
+		}
+	}
+}
